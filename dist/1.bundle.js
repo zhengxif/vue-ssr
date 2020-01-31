@@ -1,0 +1,1 @@
+exports.ids=[1],exports.modules={7:function(e,t,o){"use strict";o.r(t);var s=function(){var e=this.$createElement;return(this._self._c||e)("div",[this._ssrNode("\n    foo component\n")])};s._withStripped=!0;var n=o(0),r=Object(n.a)({},s,[],!1,null,null,"4a671bef");r.options.__file="src/components/Foo.vue";t.default=r.exports}};

@@ -17,7 +17,7 @@ export default {
     },
     methods: {
         show() {
-            alert(1);
+            alert(100);
         }
     }
 }

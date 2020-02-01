@@ -7,13 +7,18 @@ let fs = require('fs');
 // vue 提供服务端渲染的包
 let VueServerRenderer = require('vue-server-renderer');
 
-let serverBundle = fs.readFileSync('./dist/server.bundle.js', 'utf8');
+// let serverBundle = fs.readFileSync('./dist/server.bundle.js', 'utf8');
+
+// 这样是为了更改代码，服务端不需要重启
+let serverBundle = require('./dist/vue-ssr-server-bundle.json');
+let clientManifest = require('./dist/vue-ssr-client-manifest');
 
 let template = fs.readFileSync('./dist/index.ssr.html', 'utf8');
 
 // 创建渲染函数
 let render = VueServerRenderer.createBundleRenderer(serverBundle, {
     template,
+    clientManifest
 });
 
 

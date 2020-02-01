@@ -11,6 +11,8 @@
 <script>
 
 export default {
-  
+    metaInfo: {
+        title: 'vue-ssr'
+    }
 }
 </script>
